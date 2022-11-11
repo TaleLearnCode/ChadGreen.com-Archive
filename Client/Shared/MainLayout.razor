@@ -3,20 +3,22 @@
 <div id="wrapper">
   <TopBar />
   <Header />
-  <div class="page">
-	<div class="sidebar">
-	  <NavMenu />
-	</div>
 
-	<main>
-	  <div class="top-row px-4">
-		<a href="https://docs.microsoft.com/aspnet/" target="_blank">About</a>
-	  </div>
 
-	  <article class="content px-4">
-				@Body
-	  </article>
-	</main>
+
+
+  <!-- content begin -->
+  <div class="no-bottom no-top" id="content">
+	<div id="top"></div>
+		@Body
   </div>
+  <!-- content close -->
+  <a href="#" id="back-to-top"></a>
+
+
+
+
+
+
   <Footer />
 </div>
